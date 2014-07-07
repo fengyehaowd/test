@@ -1,0 +1,17 @@
+
+public class bbsProcess {
+
+	/**
+	 * @param args
+	 */
+	public static void processTxt()
+	{
+		String path = 
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

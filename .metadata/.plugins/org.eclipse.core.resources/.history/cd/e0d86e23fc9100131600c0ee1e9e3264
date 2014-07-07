@@ -1,0 +1,10 @@
+use warnings;
+print "hello world\n";
+
+$what ="fred|baby";
+$what2="/($what)$1$1";
+
+$test = "fredbabyfred";
+
+if($test=~$what2)
+	print "success!";

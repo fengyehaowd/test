@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 1 elements(s) to &apos;http_process/src&apos;&#x0D;&#x0A;- Original project: &apos;processor&apos;&#x0D;&#x0A;- Destination element: &apos;http_process/src&apos;&#x0D;&#x0A;- Original element: &apos;cn.ac.trimps.processor.fenghuo.batch_fenghuo_processor.java&apos;" description="Copy compilation unit" destination="=http_process/src" element1="/src&lt;cn.ac.trimps.processor.fenghuo{batch_fenghuo_processor.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1387337560144" units="1" version="1.0"/>
+</session>

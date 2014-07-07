@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"Problems occurred opening the selected resources.",1375325121802
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1375325122087
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1375325126400
+started,bundle,org.eclipse.compare,3.5.0.I20090514-0808,"org.eclipse.compare",1375325128728
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1375325131366
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1375325135548
+executed,command,org.eclipse.ltk.ui.refactoring,3.4.100.v20090604,"org.eclipse.ltk.ui.refactoring.commands.deleteResources",1375325135553
+executed,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.edit.delete",1375325135553
+activated,editor,org.eclipse.wst.xml.ui,1.1.0.v200905242047,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1375325155467
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1375325157914
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1375325158210
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1375325163338
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1375325163490
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1375325165975
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1375325226692
+activated,view,org.eclipse.jdt.ui,3.5.0.v20090604,"org.eclipse.jdt.ui.PackageExplorer",1375325228449
+closed,editor,org.eclipse.wst.xml.ui,1.1.0.v200905242047,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1375325228449
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1375325231675
+opened,editor,org.eclipse.wst.xml.ui,1.1.0.v200905242047,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1375325240029
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1375325240052
+activated,editor,org.eclipse.wst.xml.ui,1.1.0.v200905242047,"org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart",1375325240085
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1375325253081
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1375325441997
+activated,view,org.eclipse.jdt.ui,3.5.0.v20090604,"org.eclipse.jdt.ui.PackageExplorer",1375325444547
+error,log,,,"JavaBuilder handling CoreException",1375325456558

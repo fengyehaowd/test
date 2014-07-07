@@ -1,0 +1,85 @@
+import java.beans.Statement;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+
+public class bbsProcess {
+
+	/**
+	 * @param args
+	 * @throws IOException 
+	 * @throws SQLException 
+	 * @throws ClassNotFoundException 
+	 */
+	public Connection buildConn()
+	{
+		//ArrayList<String> qqFile = new  ArrayList<String>();
+		Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+		String url="jdbc:odbc:DRIVER=Microsoft Access Driver (*.mdb, *.accdb);DBQ=f:/IP/´¿ÕæÍøÂç.accdb";
+		Connection conn = DriverManager.getConnection(url,"","");
+		return conn;
+	}
+	public  String getAddr(java.sql.Statement stmt,String ip) throws ClassNotFoundException, SQLException
+	{
+		String ipHex = MyString.ip2Num(ip);
+		//System.out.println(ip);
+		//System.out.println(ipHex);
+
+		String cmd = "select addr from IP where IP_begin <= '"+ipHex+"' and IP_end >= '"+ipHex+"'";
+		ResultSet result = stmt.executeQuery(cmd);
+		String a = "";
+		if(result.next())
+			a = result.getString(1);
+		return a;
+		
+	}
+	
+	public static void processTxt() throws IOException, ClassNotFoundException, SQLException
+	{
+		IPtools IP = new IPtools();
+		String path = "f:/bbs.txt";
+		String outPath = "f:/bbs-clear.txt";
+		BufferedReader reader = new BufferedReader(new FileReader(new File(path)));
+		BufferedWriter writer = new BufferedWriter(new FileWriter(new File(outPath)));
+		String line = reader.readLine();
+		int count = 0;
+		while(line != null)
+		{
+			String[] eles = line.split("\t");
+			
+			line = reader.readLine();
+			if(eles.length != 3)
+				continue;
+			String addr = IP.getAddr(eles[1]);
+			String result = eles[0]+"\t"+eles[1]+"\t"+addr+"\t"+eles[2]+"\r\n";
+			writer.write(result);
+			writer.flush();
+			
+			System.out.println("linenum: "+(count++)+" content: "+result);
+		}
+		
+		reader.close();
+		writer.close();
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+			processTxt();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}

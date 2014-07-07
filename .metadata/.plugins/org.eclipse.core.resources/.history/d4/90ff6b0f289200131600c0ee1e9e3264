@@ -1,0 +1,13 @@
+use warnings;
+use File::Basename;
+
+$name = "c:/post.txt";
+
+$basename = basename $name;
+print $basename;
+$dirname = dirname $name;
+print $dirname;
+$basename =~ s/^/not/;
+$newname = "$dirname/$basename";
+rename($name,$newname)
+or warn "can not do it!";

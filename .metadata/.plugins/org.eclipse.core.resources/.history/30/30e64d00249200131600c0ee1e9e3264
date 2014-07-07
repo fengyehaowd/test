@@ -1,0 +1,7 @@
+use warnings;
+use File:Basement;
+
+$name = "c:/perl";
+
+$basename = basename $name;
+print $basename;

@@ -1,0 +1,75 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Set;
+
+
+public class qq {
+	public String _QQnum;
+	public HashMap<String,Integer> _IP;
+	public qq(String num)
+	{
+		_QQnum = num;
+		_IP = new HashMap<String,Integer>();
+	}
+	public void add(String ip)
+	{
+		System.out.println("add:"+ip);
+		int count;
+		if(_IP.containsKey(ip))
+			count = _IP.get(ip).intValue() + 1;
+		else
+			count = 1;
+		_IP.put(ip, count);
+	}
+	
+	public String  getMaxIP()
+	{
+		int max = 0;
+		String maxIP="null";
+		Set<String> keyset = _IP.keySet();
+		for(String ip:keyset)
+		{
+			System.out.println(ip);
+			if(_IP.get(ip) > max)
+			{
+				max = _IP.get(ip);
+				maxIP = ip;
+			}
+		}
+		return maxIP;
+	}
+	
+	public static String getAddr(String ip) throws ClassNotFoundException, SQLException
+	{
+		String ipHex = MyString.ip2Num(ip);
+		//System.out.println(ip);
+		//System.out.println(ipHex);
+		Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+		String url="jdbc:odbc:DRIVER=Microsoft Access Driver (*.mdb, *.accdb);DBQ=f:/IP/´¿ÕæÍøÂç.accdb";
+		Connection conn = DriverManager.getConnection(url,"","");
+		Statement stmt = conn.createStatement();
+		String cmd = "select addr from IP where IP_begin <= '"+ipHex+"' and IP_end >= '"+ipHex+"'";
+		ResultSet result = stmt.executeQuery(cmd);
+		while(result.next())
+			return result.getString(1);
+		return "";
+		
+	}
+	
+	static public void main(String[] args) throws ClassNotFoundException, SQLException
+	{
+		HashMap<String,Integer> s = new HashMap<String, Integer>();
+		s.put("abc", 1);
+		s.put("abc", 2);
+		s.put("sss", 4);
+		//System.out.println(s.get("abc"));
+		qq a = new qq("");
+		System.out.println(qq.getAddr("202.38.64.1"));
+	}
+
+}

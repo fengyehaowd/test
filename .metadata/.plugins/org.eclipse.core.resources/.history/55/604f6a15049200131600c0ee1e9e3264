@@ -1,0 +1,13 @@
+use warnings;
+
+
+print "welcome to game!";
+
+my $number = int(1+rand100);
+
+my $result = "guess!";
+while(defined $result)
+{
+	$guess = <STDIN>;
+	$guess eq $number && (print "correct!",break);
+}

@@ -1,0 +1,133 @@
+import java.io.DataInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.OutputStreamWriter;
+import java.io.RandomAccessFile;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+
+
+public class IPtools {
+
+	/**
+	 * @param args
+	 * @throws ClassNotFoundException 
+	 * @throws SQLException 
+	 */
+	
+	
+	public  void translate() throws ClassNotFoundException, SQLException
+	{
+		Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+		String url="jdbc:odbc:DRIVER=Microsoft Access Driver (*.mdb, *.accdb);DBQ=f:/IP/´¿ÕæÍøÂç.accdb";
+		Connection conn = DriverManager.getConnection(url,"","");
+		Statement stmt = conn.createStatement();
+		Statement stmt2 = conn.createStatement();
+		String cmd;
+		try
+		{
+			cmd = "drop table IP";
+			stmt.execute(cmd);
+		}
+		catch(SQLException e)
+		{
+			System.out.println("ip database exsits!");
+		}
+		cmd = "create table IP(IP_begin varchar,IP_end varchar,addr varchar)";
+		stmt.execute(cmd);
+		cmd = "select * from data";
+		ResultSet result = stmt.executeQuery(cmd);
+		while(result.next())
+		{
+			String addr = MyString.delQuoteMark(result.getString(4));
+			String ip_start = result.getString(2);
+			cmd = "insert into IP values('"
+				+MyString.ip2Num(ip_start)+"','"
+				+MyString.ip2Num(result.getString(3))+"','"
+				+addr+"')";
+			if(ip_start.compareTo("202.38.64.1")==0)
+			{
+				System.out.println(MyString.ip2Num(ip_start));
+			}
+			try
+			{
+			stmt2.executeUpdate(cmd);
+			}
+			catch(SQLException e)
+			{
+				System.out.println("insert error!");
+			}
+		}
+		conn.close();
+	}
+	@SuppressWarnings("deprecation")
+	public void processQQfile(File folder) throws FileNotFoundException, IOException, ClassNotFoundException, SQLException
+	{
+		File[] list = folder.listFiles();
+		if(list[0].isDirectory())
+		{
+			for(File f:list)
+				processQQfile(f);
+		}
+		else
+		{
+			ArrayList<qq> trunk = new ArrayList<qq>();
+			for(File f:list)
+			{
+				//DataInputStream reader = new DataInputStream(new FileInputStream(f));
+				RandomAccessFile reader = new RandomAccessFile(f, "r");
+				String qqNum = f.getName().split("\\.")[0];
+				qq qqObject = new qq(qqNum);
+				String s = reader.readLine();
+				System.out.println("read:"+s);
+				System.out.println(f.getAbsolutePath());
+				while(s != null && s.length()>40)
+				{
+					//System.out.println(s);
+					String[] eles = s.split("\t");
+					if(eles.length != 5)
+						continue;
+					qqObject.add(eles[1]);
+					s = reader.readLine();
+				}
+				reader.close();
+				System.out.println("read a file!");
+				trunk.add(qqObject);
+			}
+			String reportPath = folder.getPath()+"/report.txt";
+			OutputStreamWriter log = new OutputStreamWriter(new FileOutputStream(reportPath));
+			for(qq tmp:trunk)
+			{
+				//System.out.println(tmp.getMaxIP());
+				String qqLine = tmp._QQnum+"\t"+tmp.getMaxIP()+"\t"+tmp.getAddr(tmp.getMaxIP())+"\n";
+				log.write(qqLine);
+			}
+			log.close();
+		}
+		
+			
+	}
+	
+	public IPtools() throws ClassNotFoundException, SQLException, FileNotFoundException, IOException
+	{
+		//translate();
+		//ArrayList<String> qqFile = new  ArrayList<String>();
+		String folder="f:/¹ì¼£²éÑ¯";
+		processQQfile(new File(folder));
+		
+	}
+	public static void main(String[] args) throws ClassNotFoundException, SQLException, IOException {
+		// TODO Auto-generated method stub
+		IPtools t =	new IPtools();
+	
+	}
+
+}

@@ -1,0 +1,17 @@
+what,kind,bundleId,bundleVersion,description,time
+stopped,bundle,com.python.pydev.codecompletion,2.7.4.2013051601,"com.python.pydev.codecompletion",1375402931301
+stopped,bundle,com.python.pydev.refactoring,2.7.4.2013051601,"com.python.pydev.refactoring",1375402931693
+stopped,bundle,com.python.pydev.analysis,2.7.4.2013051601,"com.python.pydev.analysis",1375402931809
+stopped,bundle,com.python.pydev.debug,2.7.4.2013051601,"com.python.pydev.debug",1375402931966
+stopped,bundle,com.python.pydev.fastparser,2.7.4.2013051601,"com.python.pydev.fastparser",1375402932010
+stopped,bundle,com.python.pydev,2.7.4.2013051601,"com.python.pydev",1375402932071
+stopped,bundle,org.python.pydev.django,2.7.4.2013051601,"org.python.pydev.django",1375402932195
+stopped,bundle,org.python.pydev.customizations,2.7.4.2013051601,"org.python.pydev.customizations",1375402932282
+stopped,bundle,org.python.pydev.debug,2.7.4.2013051601,"org.python.pydev.debug",1375402932355
+stopped,bundle,org.python.pydev.refactoring,2.7.4.2013051601,"org.python.pydev.refactoring",1375402932802
+stopped,bundle,org.python.pydev,2.7.4.2013051601,"org.python.pydev",1375402932802
+stopped,bundle,org.eclipse.jdt.ui,3.5.0.v20090604,"org.eclipse.jdt.ui",1375402932802
+stopped,bundle,org.eclipse.mylyn.bugzilla.ui,3.2.0.v20090617-0100-e3x,"org.eclipse.mylyn.bugzilla.ui",1375402932802
+stopped,bundle,org.eclipse.mylyn.ide.ui,3.2.0.v20090617-0100-e3x,"org.eclipse.mylyn.ide.ui",1375402932876
+stopped,bundle,org.eclipse.mylyn.team.ui,3.2.0.v20090617-0100-e3x,"org.eclipse.mylyn.team.ui",1375402932876
+stopped,bundle,org.eclipse.mylyn.resources.ui,3.2.0.v20090617-0100-e3x,"org.eclipse.mylyn.resources.ui",1375402932950

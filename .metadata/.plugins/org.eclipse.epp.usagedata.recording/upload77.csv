@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+java.vm.vendor,sysinfo,,,"Sun Microsystems Inc.",1382948664887
+java.vm.version,sysinfo,,,"20.0-b11",1382948664887
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1382948674256
+started,bundle,org.eclipse.equinox.p2.ui,1.0.100.v20090527-1812,"org.eclipse.equinox.p2.ui",1382948682019
+started,bundle,org.eclipse.equinox.p2.ui.sdk,1.0.100.v20090520-1905,"org.eclipse.equinox.p2.ui.sdk",1382948682031
+started,bundle,org.eclipse.equinox.p2.metadata,1.0.100.v20090525,"org.eclipse.equinox.p2.metadata",1382948682069
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1382948738345
+executed,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.help.aboutAction",1382948738355
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1382948745675
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1382948757034
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1382948767949
+started,bundle,org.eclipse.equinox.p2.extensionlocation,1.0.100.v20090520-1905,"org.eclipse.equinox.p2.extensionlocation",1382948769456
+executed,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.edit.paste",1382948772313
+started,bundle,org.eclipse.equinox.p2.artifact.repository,1.0.100.v20090527-1812,"org.eclipse.equinox.p2.artifact.repository",1382948782363
+started,bundle,org.eclipse.equinox.p2.updatesite,1.0.100.v20090525,"org.eclipse.equinox.p2.updatesite",1382948785292
+started,bundle,org.eclipse.equinox.p2.publisher,1.0.0.v20090527-1812,"org.eclipse.equinox.p2.publisher",1382948785293
+error,log,,,"Unable to load the repository http://download.eclipse.org/tools/mylyn/update/e3.4/",1382948786185
+executed,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.edit.paste",1382948843924
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1382949261943
+executed,command,org.eclipse.equinox.p2.ui.sdk,1.0.100.v20090520-1905,"org.eclipse.equinox.p2.ui.sdk.install",1382949261954
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1382949263686
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1382949264738
+closed,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1382949264847
+stopped,bundle,org.eclipse.mylyn.ide.ant,3.2.0.v20090617-0100-e3x,"org.eclipse.mylyn.ide.ant",1382949265089
+stopped,bundle,org.eclipse.ant.ui,3.4.0.v20090520,"org.eclipse.ant.ui",1382949265089

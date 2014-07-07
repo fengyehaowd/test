@@ -1,0 +1,7 @@
+use warnings;
+print "hello world\n";
+
+$what ="fred|baby";
+$what2="/($what)";
+
+

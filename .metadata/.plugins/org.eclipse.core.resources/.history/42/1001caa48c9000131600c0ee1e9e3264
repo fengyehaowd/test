@@ -1,0 +1,8 @@
+use warnings;
+print "hello world\n";
+
+@rocks = qw!11a fred!;
+foreach (@rocks)
+{$a="aaa";	
+print $_."\n";}
+print $a;

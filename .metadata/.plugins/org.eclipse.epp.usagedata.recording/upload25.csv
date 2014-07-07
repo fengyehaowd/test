@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.ltk.ui.refactoring,3.4.100.v20090604,"org.eclipse.ltk.ui.refactoring",1372907532080
+opened,editor,org.eclipse.jdt.ui,3.5.0.v20090604,"org.eclipse.jdt.ui.CompilationUnitEditor",1372907532182
+activated,editor,org.eclipse.jdt.ui,3.5.0.v20090604,"org.eclipse.jdt.ui.CompilationUnitEditor",1372907532286
+closed,editor,org.eclipse.ui.editors,3.5.0.v20090527-2000,"org.eclipse.ui.DefaultTextEditor",1372907532287
+opened,editor,org.eclipse.jdt.ui,3.5.0.v20090604,"org.eclipse.jdt.ui.CompilationUnitEditor",1372907533035
+activated,editor,org.eclipse.jdt.ui,3.5.0.v20090604,"org.eclipse.jdt.ui.CompilationUnitEditor",1372907533098
+activated,view,org.eclipse.jdt.ui,3.5.0.v20090604,"org.eclipse.jdt.ui.PackageExplorer",1372907535814
+error,log,,,"Problems occurred opening the selected resources.",1372907535971
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1372907536269
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1372907539852
+error,log,,,"Problems occurred opening the selected resources.",1372907541434
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1372907541725
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1372907542866
+activated,editor,org.eclipse.jdt.ui,3.5.0.v20090604,"org.eclipse.jdt.ui.CompilationUnitEditor",1372907543584
+activated,editor,org.eclipse.jdt.ui,3.5.0.v20090604,"org.eclipse.jdt.ui.CompilationUnitEditor",1372907544586
+activated,editor,org.eclipse.jdt.ui,3.5.0.v20090604,"org.eclipse.jdt.ui.CompilationUnitEditor",1372907546382
+opened,view,org.eclipse.jdt.ui,3.5.0.v20090604,"org.eclipse.jdt.ui.TypeHierarchy",1372907547514
+activated,view,org.eclipse.jdt.ui,3.5.0.v20090604,"org.eclipse.jdt.ui.TypeHierarchy",1372907547531
+activated,view,org.eclipse.jdt.ui,3.5.0.v20090604,"org.eclipse.jdt.ui.PackageExplorer",1372907548428
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1372907551270
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1372907575098
+started,bundle,org.eclipse.wst.xml.ui,1.1.0.v200905242047,"org.eclipse.wst.xml.ui",1372907575279
+started,bundle,org.eclipse.wst.sse.ui,1.1.100.v200905141750,"org.eclipse.wst.sse.ui",1372907575300
+started,bundle,org.eclipse.wst.sse.core,1.1.400.v200905141750,"org.eclipse.wst.sse.core",1372907575372
+started,bundle,org.eclipse.wst.xml.core,1.1.400.v200904300540,"org.eclipse.wst.xml.core",1372907575406

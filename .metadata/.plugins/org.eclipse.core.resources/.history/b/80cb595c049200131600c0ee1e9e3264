@@ -1,0 +1,14 @@
+use warnings;
+
+
+print "welcome to game!";
+
+ $number = 10;
+
+ $result = "guess!";
+while(defined $result)
+{
+	chomp($guess = <STDIN>;)
+	$guess eq $number && (print "correct!");
+	
+}

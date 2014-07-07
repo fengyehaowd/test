@@ -1,0 +1,10 @@
+use warnings;
+print "hello world\n";
+
+@rocks = qw!11a fred!;
+foreach (@rocks)
+{$a="aaa";}
+
+$_ = "abcdefd";
+~s/(\w+)/\U$1/g;
+print $str;

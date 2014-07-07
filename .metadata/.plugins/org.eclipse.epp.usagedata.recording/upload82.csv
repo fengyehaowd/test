@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+java.vm.vendor,sysinfo,,,"Sun Microsystems Inc.",1382949420148
+java.vm.version,sysinfo,,,"20.0-b11",1382949420148
+started,bundle,org.eclipse.equinox.p2.ui,1.0.100.v20090527-1812,"org.eclipse.equinox.p2.ui",1382949424542
+started,bundle,org.eclipse.equinox.p2.ui.sdk,1.0.100.v20090520-1905,"org.eclipse.equinox.p2.ui.sdk",1382949424543
+started,bundle,org.eclipse.equinox.p2.metadata,1.0.100.v20090525,"org.eclipse.equinox.p2.metadata",1382949424610
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1382949424913
+executed,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.edit.paste",1382949426887
+started,bundle,org.eclipse.equinox.p2.extensionlocation,1.0.100.v20090520-1905,"org.eclipse.equinox.p2.extensionlocation",1382949429446
+started,bundle,org.eclipse.equinox.p2.updatesite,1.0.100.v20090525,"org.eclipse.equinox.p2.updatesite",1382949431492
+started,bundle,org.eclipse.equinox.p2.publisher,1.0.0.v20090527-1812,"org.eclipse.equinox.p2.publisher",1382949431498
+error,log,,,"Unable to load the repository http://download.eclipse.org/windowbuilder/WB/release/R201206261200/3.5",1382949432321
+started,bundle,org.eclipse.equinox.p2.artifact.repository,1.0.100.v20090527-1812,"org.eclipse.equinox.p2.artifact.repository",1382949436648
+no handler,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.edit.undo",1382949438115
+executed,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.edit.paste",1382949439226
+error,log,,,"Unable to load the repository http://download.eclipse.org/tools/mylyn/update/e3.4/",1382949439375
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1382949621093
+executed,command,org.eclipse.equinox.p2.ui.sdk,1.0.100.v20090520-1905,"org.eclipse.equinox.p2.ui.sdk.install",1382949621104
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1382949623428
+started,bundle,org.eclipse.equinox.p2.touchpoint.eclipse,1.0.100.v20090611-1224,"org.eclipse.equinox.p2.touchpoint.eclipse",1382949647877
+started,bundle,org.eclipse.equinox.p2.touchpoint.natives,1.0.100.v20090520-1905,"org.eclipse.equinox.p2.touchpoint.natives",1382949651401
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1382949659752
+executed,command,org.eclipse.equinox.p2.ui.sdk,1.0.100.v20090520-1905,"org.eclipse.equinox.p2.ui.sdk.install",1382949659765
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1382949660066
+started,bundle,org.eclipse.equinox.security.ui,1.0.100.v20090520-1800,"org.eclipse.equinox.security.ui",1382950338616
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1382967666239

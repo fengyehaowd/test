@@ -1,0 +1,14 @@
+use warnings;
+
+
+print "welcome to game!";
+
+my $number = `0;
+
+my $result = "guess!";
+while(defined $result)
+{
+	$guess = <STDIN>;
+	$guess eq $number && (print "correct!", break);
+	
+}

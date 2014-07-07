@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<commands>
+	<addCategory
+		id="category_1383272263348"
+		name="Custom"
+		description="Container for custom components"
+		visible="true"
+		open="true"/>
+	<addComponent
+		id="custom_1383272263348"
+		name="ButtonGroup"
+		description="Creates javax.swing.ButtonGroup component."
+		visible="true"
+		class="javax.swing.ButtonGroup"
+		category="category_1383272263348"/>
+	<addComponent
+		id="custom_1383274221474"
+		name="JFileChooser"
+		description="Creates javax.swing.JFileChooser component."
+		visible="true"
+		class="javax.swing.JFileChooser"
+		category="category_1383272263348"/>
+	<addComponent
+		id="custom_1383274311950"
+		name="JFileChooser"
+		description="Creates javax.swing.JFileChooser component."
+		visible="true"
+		class="javax.swing.JFileChooser"
+		category="category_1383272263348"/>
+	<addComponent
+		id="custom_1383274345869"
+		name="JFileChooser"
+		description="Creates javax.swing.JFileChooser component."
+		visible="true"
+		class="javax.swing.JFileChooser"
+		category="category_1383272263348"/>
+	<addComponent
+		id="custom_1383274588121"
+		name="JFileChooser"
+		description="Creates javax.swing.JFileChooser component."
+		visible="true"
+		class="javax.swing.JFileChooser"
+		category="category_1383272263348"/>
+	<addComponent
+		id="custom_1383274683589"
+		name="JFileChooser"
+		description="Creates javax.swing.JFileChooser component."
+		visible="true"
+		class="javax.swing.JFileChooser"
+		category="category_1383272263348"/>
+</commands>

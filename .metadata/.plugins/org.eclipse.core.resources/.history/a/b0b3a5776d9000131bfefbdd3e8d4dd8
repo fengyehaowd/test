@@ -1,0 +1,6 @@
+use warnings;
+print "hello world";
+chomp($a = <STDIN>);
+chomp($b = <STDIN>);
+
+print()

@@ -1,0 +1,53 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.sql.SQLException;
+
+
+public class bbsProcess {
+
+	/**
+	 * @param args
+	 * @throws IOException 
+	 * @throws SQLException 
+	 * @throws ClassNotFoundException 
+	 */
+	public static void processTxt() throws IOException, ClassNotFoundException, SQLException
+	{
+		IPtools ip = new IPtools();
+		String path = "f:/bbs.txt";
+		String outPath = "f:/bbs-clear.txt";
+		BufferedReader reader = new BufferedReader(new FileReader(new File(path)));
+		BufferedWriter writer = new BufferedWriter(new FileWriter(new File(outPath)));
+		String line = reader.readLine();
+		while(line != null)
+		{
+			String[] eles = line.split("\t");
+			if(eles.length != 3)
+				continue;
+			String addr = IPtools.getAddr(eles[1]);
+			String result = eles[0]+"\t"+eles[1]+"\t"+addr+"\t"+eles[2]+"\r\n";
+			writer.write(result);
+			writer.flush();
+		}
+		
+		reader.close();
+		writer.close();
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+			processTxt();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}

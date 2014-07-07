@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.update.configurator,3.3.0.v20090312,"org.eclipse.update.configurator",1356076283546
+started,bundle,org.eclipse.update.core,3.2.300.v20090525,"org.eclipse.update.core",1356076283546
+started,bundle,org.eclipse.update.scheduler,3.2.200.v20081127,"org.eclipse.update.scheduler",1356076283546
+os,sysinfo,,,"win32",1356076283548
+arch,sysinfo,,,"x86",1356076283548
+ws,sysinfo,,,"win32",1356076283548
+locale,sysinfo,,,"zh_CN",1356076283548
+processors,sysinfo,,,"4",1356076283548
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1356076283548
+java.runtime.version,sysinfo,,,"1.6.0_25-b06",1356076283548
+java.specification.name,sysinfo,,,"Java Platform API Specification",1356076283548
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1356076283548
+java.specification.version,sysinfo,,,"1.6",1356076283548
+java.vendor,sysinfo,,,"Sun Microsystems Inc.",1356076283548
+java.version,sysinfo,,,"1.6.0_25",1356076283548
+java.vm.info,sysinfo,,,"mixed mode, sharing",1356076283548
+java.vm.name,sysinfo,,,"Java HotSpot(TM) Client VM",1356076283548
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1356076283548
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1356076283548
+java.vm.specification.version,sysinfo,,,"1.0",1356076283548
+java.vm.vendor,sysinfo,,,"Sun Microsystems Inc.",1356076283548
+java.vm.version,sysinfo,,,"20.0-b11",1356076283548
+error,log,,,"Intro tried accessing a NULL bundle.",1356076290715
+error,log,,,"Intro tried accessing a NULL bundle.",1356076293375
+error,log,,,"Intro tried accessing a NULL bundle.",1356076295168

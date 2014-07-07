@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.equinox.p2.metadata,1.0.100.v20090525,"org.eclipse.equinox.p2.metadata",1382948310463
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1382948310848
+started,bundle,org.eclipse.equinox.p2.extensionlocation,1.0.100.v20090520-1905,"org.eclipse.equinox.p2.extensionlocation",1382948312943
+executed,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.edit.paste",1382948326892
+started,bundle,org.eclipse.equinox.p2.artifact.repository,1.0.100.v20090527-1812,"org.eclipse.equinox.p2.artifact.repository",1382948332789
+started,bundle,org.eclipse.equinox.p2.updatesite,1.0.100.v20090525,"org.eclipse.equinox.p2.updatesite",1382948343901
+started,bundle,org.eclipse.equinox.p2.publisher,1.0.0.v20090527-1812,"org.eclipse.equinox.p2.publisher",1382948343916
+error,log,,,"Unable to load the repository http://download.eclipse.org/tools/mylyn/update/e3.4/",1382948344961
+executed,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.edit.paste",1382948384609
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1382948404127
+executed,command,org.eclipse.equinox.p2.ui.sdk,1.0.100.v20090520-1905,"org.eclipse.equinox.p2.ui.sdk.install",1382948404148
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1382948406304
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1382948407152
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1382948407784
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1382948441764
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1382948443812
+started,bundle,org.eclipse.equinox.security.ui,1.0.100.v20090520-1800,"org.eclipse.equinox.security.ui",1382948476663
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1382948497996
+executed,command,org.eclipse.ui,3.5.0.I20090604-2000,"org.eclipse.ui.help.aboutAction",1382948498010
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1382948505250
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1382948509049
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1382948513362
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1382948537956
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1382948544458
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1382948560960

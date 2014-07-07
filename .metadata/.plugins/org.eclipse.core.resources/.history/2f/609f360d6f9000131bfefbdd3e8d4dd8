@@ -1,0 +1,8 @@
+use warnings;
+print "hello world\n";
+chomp($a = <STDIN>);
+chomp($b = <STDIN>);
+@rocks = qw!"11a","fred"!;
+foreach $rock(@rocks)
+{	print $rock;}
+print $a*$b;

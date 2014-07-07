@@ -1,0 +1,10 @@
+use warnings;
+use File::Basename;
+
+$name = "c:/post.txt";
+
+$basename = basename $name;
+print $basename;
+
+$dirname = dirname $name;
+print $dirname;

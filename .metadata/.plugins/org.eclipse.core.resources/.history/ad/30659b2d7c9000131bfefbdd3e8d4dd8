@@ -1,0 +1,6 @@
+use warnings;
+print "hello world\n";
+
+@rocks = qw!11a fred!;
+foreach (@rocks)
+{	print $_."\n";}

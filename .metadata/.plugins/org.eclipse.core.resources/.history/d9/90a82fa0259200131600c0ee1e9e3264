@@ -1,0 +1,8 @@
+use warnings;
+use File::Basename;
+
+$name = "c:/post.txt";
+
+$basename = basename $name;
+print $basename;
+print @INC;
